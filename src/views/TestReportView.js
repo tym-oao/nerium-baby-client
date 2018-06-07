@@ -13,7 +13,7 @@ module.exports = {
                 Object.entries(row).map(function (field) {
                     return m("p",
                         m("strong", field[0] + ": "),
-                        m("span", field[1]))
+                        field[1])
                 }), m("p", "\u00A0"))
             })
         )
