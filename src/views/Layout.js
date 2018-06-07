@@ -4,6 +4,9 @@ var m = require("mithril")
 module.exports = {
     view: function(vnode) {
         return m("main.layout", [
+            m("img", {
+                "src": "https://dl.dropboxusercontent.com/s/71rf6yosekslnog/skate.png",
+            }),
             m("h1", "Baby Experimental Nerium Client" 
             ),
             m("p",
