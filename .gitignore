@@ -64,4 +64,7 @@ typings/
 .vuepress/dist
 
 # Serverless directories
-.serverlessbin/
+.serverless
+
+# webpack build
+bin/

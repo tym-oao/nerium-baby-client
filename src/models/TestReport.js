@@ -3,10 +3,10 @@ const m = require("mithril")
 
 const TestReport = {
     resultSet: [],
-    loadResult: function () {
+    loadResult: function (greeting) {
         return m.request({
             method: "GET",
-            url: "https://nerium.kzfrb3.pw/v1/test/?greeting=sup",
+            url: "https://nerium.kzfrb3.pw/v1/test/?greeting=" + greeting,
         })
             .then(function (result) {
                 TestReport.resultSet = result.data
