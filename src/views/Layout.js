@@ -16,7 +16,7 @@ module.exports = {
                 m("a[href='https://nerium.kzfrb3.pw/v1/test/?greeting=sup']", "Nerium"),
                 " instance running on my personal GCP account"]
             ),
-            m("section.section", vnode.children),
+            m("section", vnode.children),
             m("footer",
                 m("p.has-text-right", 
                     m("a[href='https://github.com/tym-oao/nerium-baby-client']", "Source")
