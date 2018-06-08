@@ -9,8 +9,8 @@
     "build": "webpack src/index.js --output bin/app.js -p"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "tym-oao",
+  "license": "Apache 2.0",
   "dependencies": {
     "mithril": "^1.1.6"
   },
