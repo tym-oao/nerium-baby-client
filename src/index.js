@@ -1,7 +1,8 @@
 // src/index.js
 const m = require("mithril")
-const TestReportView = require("./views/TestReportView")
 const Layout = require("./views/Layout")
+const TestReportView = require("./views/TestReportView")
+const VersionReportView = require("./views/VersionReportView")
 
 m.route(document.body, "/test", {
     "/test": {
@@ -9,4 +10,9 @@ m.route(document.body, "/test", {
             return m(Layout, m(TestReportView))
         }
     },
+    "/version": {
+        render: function() {
+            return m(Layout, m(VersionReportView))
+        }
+    }
 })
