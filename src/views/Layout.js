@@ -21,10 +21,9 @@ module.exports = {
                 ])
             )),
             m(".columns.is-centered",
-              m(".column.is-narrow"),
-                m("img.is-128x128", {
-                "src": "https://dl.dropboxusercontent.com/s/71rf6yosekslnog/skate.png",
-            })),
+              m(".column.has-text-centered",
+                m("p", m("img.is-128x128[src='https://dl.dropboxusercontent.com/s/71rf6yosekslnog/skate.png']"
+            )))),
             m("h1.title", "Baby Experimental Nerium Client" 
             ),
             m("p.subtitle",
