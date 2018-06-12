@@ -67,4 +67,4 @@ typings/
 .serverless
 
 # webpack build
-bin/
+mithril-app/bin/
