@@ -68,3 +68,6 @@ typings/
 
 # webpack build
 mithril-app/bin/
+
+riot-app/.sass-cache/
+
