@@ -1,0 +1,15 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Gentium+Basic|Fira+Mono');
+
+// Update Bulma's global variables
+$family-sans-serif: "Open Sans", sans-serif;
+$family-primary: "Gentium Basic", serif;
+$family-monospace: "Fira Mono", monospace;
+
+// row style
+.row {
+    font-family: $family-sans-serif;
+    margin-bottom: 3rem;
+}
+// Import the rest of Bulma
+@import "node_modules/bulma/bulma";
