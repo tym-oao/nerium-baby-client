@@ -1,8 +1,8 @@
 <test-report>
 
 <div class='result'>
-<div class='row' each='{ row in resultSet }'>
-        <p each='{ entry, e in row }'><strong>{ e + ": "}</strong>{ entry }</p>
+    <div class='row' each={ row in resultSet }>
+        <p each={ col, c in row }><strong>{ c + ": "}</strong>{ col }</p>
     </div>
 </div>
 
