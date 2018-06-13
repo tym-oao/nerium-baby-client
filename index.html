@@ -7,7 +7,8 @@
         <link rel='stylesheet' href='style.min.css'>
     </head>
     <body>
-        <main class='section container'>
+        <main class='container'>
+            <section class='section'>
                 <div class='columns is-centered'>
                     <div class='column has-text-centered'>
                         <p>
@@ -18,9 +19,10 @@
                     <h1 class='title'>Baby Experimental Nerium Client (Riot)</h1>
                     <p class='subtitle'>Fetches data from a <a href='https://nerium.kzfrb3.pw/v1/test/?greeting=sup'>Nerium</a> instance running on my personal GCP account.</p>
                 </div>
-                <div class='section'>
-                    <test-report></test-report>
-                </div>
+            </section>
+            <section class='section'>
+                <test-report></test-report>
+            </section>
         </main>
         <script src="https://rawgit.com/riot/riot/master/riot%2Bcompiler.min.js"></script>
         <script src="test-report.tag" type="riot/tag"></script>
@@ -28,5 +30,5 @@
         <script>
             riot.mount('*')
         </script>
-            </body>
+    </body>
 </html>
