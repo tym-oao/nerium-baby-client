@@ -4,8 +4,8 @@
 <div class='section form columns is-centered'>
     <div class='column is-4'>
         <form ref='greeting-form' onsubmit={ submit }>
-            <input type='text' placeholder='quux' ref='greeting' class='form-field is-size-4'>
-            <button ref='submit' class='button is-primary'>Go</button>
+            <input type='text' placeholder='quux' ref='greeting' class='form-field is-size-4'></input>
+            <button ref='submit' class='button is-primary is-tooltip-info tooltip' data-tooltip='Change greeting query parameter'>Go</button>
         </form>
     </div>
 </div>
