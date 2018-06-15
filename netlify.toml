@@ -1,0 +1,7 @@
+[Settings]
+  ID = "b94aafbb-f8d1-47f5-bd05-384fcd92a29d"
+
+[Build]
+  Publish = "."
+  Functions = ""
+  Command = "npm run-script build"

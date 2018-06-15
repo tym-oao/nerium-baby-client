@@ -1,38 +1,37 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>Baby Nerium Client</title>
-        <link rel='stylesheet' href='style.min.css'>
-    </head>
-    <body>
-        <main class='container'>
-            <section class='section'>
-                <div class='columns is-centered'>
-                    <div class='column has-text-centered'>
-                        <p><img class='is-128x128' src='https://dl.dropboxusercontent.com/s/71rf6yosekslnog/skate.png'></p>
-                    </div>
-                </div>
-                <div>
-                    <h1 class='title'>Baby Experimental Nerium Client</h1>
-                    <p class='subtitle'>Fetches data from a <a href='https://nerium.kzfrb3.pw/v1/test/?greeting=sup'>Nerium</a> instance running on my personal GCP account.</p>
-                </div>
-            </section>
-            <section class='section'>
-                <test-report></test-report>
-            </section>
-            <section class='section'>
-                <p class='has-text-right'>
-                    <a href='https://github.com/tym-oao/nerium-baby-client/'>Source</a>
-                </p>
-            </section>
-        </main>
-        <script src="https://rawgit.com/riot/riot/master/riot%2Bcompiler.min.js"></script>
-        <script src="test-report.tag" type="riot/tag"></script>
-        <!-- mount this app -->
-        <script>
-            riot.mount('*')
-        </script>
-    </body>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Baby Nerium Client</title>
+  <link rel='stylesheet' href='style.min.css'>
+</head>
+  <body>
+  <main class='container'>
+    <section class='section'>
+      <div class='columns is-centered'>
+        <div class='column has-text-centered'>
+          <p>
+            <img class='is-128x128' src='https://dl.dropboxusercontent.com/s/71rf6yosekslnog/skate.png'>
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1 class='title'>Baby Experimental Nerium Client</h1>
+        <p class='subtitle'>Fetches data from a
+          <a href='https://nerium.kzfrb3.pw/v1/test/?greeting=sup'>Nerium</a> instance running on my personal GCP account.</p>
+      </div>
+    </section>
+    <section class='section'>
+    <div id="app"></div>
+    </section>
+    <section class='section'>
+      <p class='has-text-right'>
+        <a href='https://github.com/tym-oao/nerium-baby-client/'>Source</a>
+      </p>
+    </section>
+    </main>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>
