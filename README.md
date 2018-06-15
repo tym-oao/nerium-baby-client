@@ -4,6 +4,8 @@ Testing out frameworks to consume and display data from the [Nerium](https://git
 
 Currently based on ~~Mithril~~ ~~Riot~~ Vue.js
 
+<https://baby-client.ty-m.pw>
+
 ## Build Setup
 
 ``` bash
