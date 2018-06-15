@@ -4,7 +4,6 @@
       <div class='column is-4'>
           <form ref='greeting-form' v-on:submit.prevent='updateGreeting'>
               <input type='text' placeholder='quux' v-model='newGreeting' class='form-field is-size-4'></input>
-              <button ref='submit' class='button is-primary is-tooltip-info tooltip' data-tooltip='Change greeting query parameter'>Go</button>
           </form>
       </div>
     </div>
