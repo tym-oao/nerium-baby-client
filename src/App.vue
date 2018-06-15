@@ -2,8 +2,8 @@
   <div id='app'>
     <div class='section form columns is-centered'>
       <div class='column is-4'>
-          <form ref='greeting-form' v-on:submit.prevent='updateGreeting'>
-              <input type='text' placeholder='quux' v-model='newGreeting' class='form-field is-size-4'></input>
+          <form ref='greeting-form' v-on:submit.prevent='load'>
+              <input type='text' placeholder='quux' v-model='greeting' class='form-field is-size-4' />
           </form>
       </div>
     </div>
@@ -20,27 +20,21 @@ export default {
   name: 'app',
   methods: {
     load() {
-    var req = new XMLHttpRequest()
-    var url ='https://nerium.kzfrb3.pw/v1/test/?greeting=' + this.greeting
-    console.log(url)
-    req.open('GET', url, true)
-    req.onload = () => {
-      this.resultSet = JSON.parse(req.responseText).data
-      console.log(this.resultSet)
-    }
-    req.send()
-    },
-    updateGreeting() {
-      this.greeting = this.newGreeting
-      this.load()
-      console.log(this.greeting)
+      var req = new XMLHttpRequest()
+      var url ='https://nerium.kzfrb3.pw/v1/test/?greeting=' + this.greeting
+      console.log(url)
+      req.open('GET', url, true)
+      req.onload = () => {
+        this.resultSet = JSON.parse(req.responseText).data
+        console.log(this.resultSet)
+      }
+      req.send()
     }
   },
   data () {
     return {
       resultSet: [],
       greeting: 'sup',
-      newGreeting: '',
     }
   },
   mounted() {
