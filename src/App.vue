@@ -29,6 +29,7 @@ export default {
         console.log(this.resultSet)
       }
       req.send()
+      this.greeting = ''
     }
   },
   data () {
