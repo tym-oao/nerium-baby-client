@@ -1,6 +1,10 @@
-# vue-trial
+# nerium-baby-client
 
-> A Vue.js project
+Testing out frameworks to consume and display data from the [Nerium](https://github.com/oaodev/nerium) API
+
+Currently based on ~~Mithril~~ ~~Riot~~ Vue.js
+
+<https://baby-client.ty-m.pw>
 
 ## Build Setup
 
